@@ -25,7 +25,7 @@ public class Customer {
 
     @Column(name = "registered_at", insertable = false, updatable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     @CreationTimestamp
-    private LocalDateTime registeredAt; // timestamp auto-set in DB
+    private LocalDateTime registeredAt; 
 
     public Customer() {
 

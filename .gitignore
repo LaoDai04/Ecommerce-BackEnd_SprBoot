@@ -28,3 +28,6 @@ Thumbs.db
 
 # Spring Boot specific
 /spring-boot-devtools.properties
+
+# Local environment secrets
+.env
