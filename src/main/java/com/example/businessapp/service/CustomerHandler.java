@@ -20,7 +20,7 @@ public class CustomerHandler {
         return repo.findAll();
     }
 
-    public ResponseEntity<Customer> getCustomerById(Long id) {
+    public ResponseEntity<Customer> getCustomerById(Integer id) {
         return repo.findById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());

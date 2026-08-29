@@ -12,7 +12,7 @@ public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customer_id")
-    private Long customerId;
+    private Integer customerId;
 
     @Column(name = "customer_name", length = 50)
     private String customerName;
@@ -25,7 +25,7 @@ public class Customer {
 
     @Column(name = "registered_at", insertable = false, updatable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     @CreationTimestamp
-    private LocalDateTime registeredAt; 
+    private LocalDateTime registeredAt;
 
     public Customer() {
 
@@ -38,11 +38,11 @@ public class Customer {
     }
 
     // Getters and setters
-    public Long getCustomerId() {
+    public Integer getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(Long customerId) {
+    public void setCustomerId(Integer customerId) {
         this.customerId = customerId;
     }
 
